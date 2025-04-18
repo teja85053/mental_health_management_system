@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Questions</title>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-3">
+    
+
+    </div>
+    <div class="col-sm-6">
+    <form action="QuestionServlet" method="post" >
+        <div style="font-family:cursive;">
+           <b> <label for="q1">Question 1:How are you feeling today?</label><br></b>
+            <input type="radio" id="q1option1" name="q1" value="a">Good<br>
+            <input type="radio" id="q1option2" name="q1" value="b">Okay<br>
+            <input type="radio" id="q1option3" name="q1" value="c">Not so good<br>
+            
+
+
+            <b><label for="q2">Question 2:How would you describe your overall stress level?</label><br></b>
+			<input type="radio" id="q2option1" name="q2" value="a">Low<br>
+            <input type="radio" id="q2option2" name="q2" value="b">Normal<br>
+            <input type="radio" id="q2option3" name="q2" value="c">High<br>
+            
+              
+            <b><label for="q3">Question 3:Are you having trouble sleeping?</label><br></b>
+			<input type="radio" id="q3option1" name="q3" value="a">No<br>
+            <input type="radio" id="q3option2" name="q3" value="b">Sometimes<br>
+            <input type="radio" id="q3option3" name="q3" value="c">Yes<br>
+
+            <b><label for="q4">Question 4:Have you noticed any changes in your appetite or eating habits recently?</label><br></b>
+          	<input type="radio" id="q4option1" name="q4" value="a">No change<br>
+            <input type="radio" id="q4option2" name="q4" value="b">Slight Change<br>
+            <input type="radio" id="q4option3" name="q4" value="c">Drastic changes<br>
+
+            <b><label for="q5">Question 5:Have you experienced any anxiety recently?</label><br></b>
+            <input type="radio" id="q5option1" name="q5" value="a">No <br>
+            <input type="radio" id="q5option2" name="q5" value="b">Sometimes<br>
+            <input type="radio" id="q5option3" name="q5" value="c">Yes<br>
+            
+           <b> <label for="q6">Question 6: How often do you feel overwhelmed by your school work?</label><br></b>
+            <input type="radio" id="q6option1" name="q6" value="a">Rarely<br>
+            <input type="radio" id="q6option2" name="q6" value="b">Sometimes<br>
+            <input type="radio" id="q6option3" name="q6" value="c">Often<br>
+				
+            <b><label for="q7">Question 7:Have you lost interest in activities or hobbies you used to enjoy? </label><br></b>
+            <input type="radio" id="q7option1" name="q7" value="a">No<br>
+            <input type="radio" id="q7option2" name="q7" value="b">Sometimes<br>
+            <input type="radio" id="q7option3" name="q7" value="c">Yes<br>
+
+           <b> <label for="q8">Question 8:Do you have a support system or someone you feel comfortable talking to about your feelings?</label><br></b>
+            <input type="radio" id="q8option1" name="q8" value="a">Yes<br>
+            <input type="radio" id="q8option2" name="q8" value="b">May be<br>
+            <input type="radio" id="q8option3" name="q8" value="c">No<br>
+           <b> <label for="q9">Question 9:How often do you engage in self-care activities like exercise, relaxation, or hobbies?</label><br></b>
+            <input type="radio" id="q9option1" name="q9" value="a">Often<br>
+            <input type="radio" id="q9option2" name="q9" value="b">Sometimes<br>
+            <input type="radio" id="q9option3" name="q9" value="c">Rarely<br>
+
+          <b> <label for="q10">Question 10:Have you considered seeking help or talking to a mental health professional about your emotional well-being?</label><br></b>
+            <input type="radio" id="q5option1" name="q10" value="a">Yes <br>
+            <input type="radio" id="q5option2" name="q10" value="b">May be<br>
+            <input type="radio" id="q5option3" name="q10" value="c">No<br>
+            
+            
+        </div>
+        <br>
+                  <input type="submit" value="Submit Quiz">
+
+      </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="ISO-8859-1">
+	<title>Daily Test</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    	
+    	
+    </style>
+</head>
+<body style="background-color: #FFE4C4;">
+	<%@include file="Userbar.jsp" %>
+	<div class="row mt-5 text-center "><h1>Take your test</h1> </div>
+	<div class="row p-5">
+    <div class="col-sm-3"> </div>
+    <div class="col-sm-6 text-dark">
+    <form action="QuestionServlet" method="post">
+        <div style="font-family:cursive;">
+            <label for="q1"><b>Question 1:On a scale of 1 to 3, how would you rate your overall mood today?</b></label><br>
+             	<input type="radio" id="q1a" name="q1" value="a">Happy<br>
+            	<input type="radio" id="q1b" name="q1" value="b">Neutral<br>
+           		<input type="radio" id="q1c" name="q1" value="c">Sad<br>
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q2"><b>Question 2:How well did you sleep last night?</b></label><br>
+            	<input type="radio" id="q2a" name="q2" value="a">Well<br>
+                <input type="radio" id="q2b" name="q2" value="b">Average<br>
+                <input type="radio" id="q2c" name="q2" value="c">Poor<br>
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q3"><b>Question 3:Are you feeling overwhelmed or stressed today?</b></label><br>
+            	<input type="radio" id="q3a" name="q3" value="a">Not at all<br>
+             	<input type="radio" id="q3b" name="q3" value="b">Little<br>
+          		<input type="radio" id="q3c" name="q3" value="c">Extremely<br>
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q4"><b>Question 4:Have you talked to someone about your feelings today?</b></label><br>
+            	<input type="radio" id="q4a" name="q4" value="a">Yes, with friends/family<br>
+           		<input type="radio" id="q4b" name="q4" value="b">No, Not yet<br>
+         		<input type="radio" id="q4c" name="q4" value="c">  I prefer not to discuss it<br>
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q5"><b>Question 5:How would you describe your energy level today?</b></label><br>
+           		<input type="radio" id="q5a" name="q5" value="a">Energetic<br>
+          		<input type="radio" id="q5b" name="q5" value="b">Neutral<br>
+               	<input type="radio" id="q5c" name="q5" value="c">Exhausted<br>
+     	</div>
+        <div style="font-family:cursive;">
+            <label for="q6"><b>Question 6:Are you experiencing physical symptoms like headaches, stomachaches, or muscle tension</label><br>
+            	<input type="radio" id="q6a" name="q6" value="a">Rarely<br>
+           		<input type="radio" id="q6b" name="q6" value="b">Occasionally<br>
+               	<input type="radio" id="q6c" name="q6" value="c">Sometimes<br>
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q7"><b>Question 7:How do you feel like you're managing your academic workload effectively? </b></label><br>
+                <input type="radio" id="q7a" name="q7" value="a">Effectively<br>
+              	<input type="radio" id="q7b" name="q7" value="b">Neutral<br>
+                <input type="radio" id="q7c" name="q7" value=" c">Ineffectively<br>
+                
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q8"><b>Question 8: Are you experiencing any physical symptoms related to stress or anxiety?</b></label><br>
+            	<input type="radio" id="q8a" name="q8" value="a">None<br>
+                <input type="radio" id="q8b" name="q8" value="b">Minor<br>
+      			<input type="radio" id="q8c" name="q8" value="c">Severe<br>
+                
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q9"><b>Question 9:Are you finding it challenging to focus on your studies today?</b></label><br>
+            	<input type="radio" id="q9a" name="q9" value="a">No<br>
+          		<input type="radio" id="q9b" name="q9" value="b"> A Little<br>
+               	<input type="radio" id="q9c" name="q9" value="c">Extremely<br>
+                
+        </div>
+        <div style="font-family:cursive;">
+            <label for="q10"><b>Question 10:Have you engaged in any self-care activities today?</b></label><br>
+            	<input type="radio" id="q10a" name="q10" value="a">Yes<br>
+       			<input type="radio" id="q10b" name="q10" value="b">No, not yet.<br>
+               	<input type="radio" id="q10c" name="q10" value="c">I don't have time for self-care<br>
+                
+        </div>
+        <div><button type="submit" class="btn btn-info mt-5">Submit</button></div>
+
+      </form>
+    </div>
+    <div class="col-sm-3"></div>
+    </div>
+
+</body>
+</html>
